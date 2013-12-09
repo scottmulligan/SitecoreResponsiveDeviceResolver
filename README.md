@@ -13,4 +13,4 @@ The next step is to navigate to the Responsive Device Resolver item located in t
 
 Keep in mind that the "screen.width" and "screen.height" JS methods are used to detect device resolution in this module. These values give us a good chance to correctly determine a user's device resolution but they are not always accurate. The good news is that even if the numbers are slightly off, we can still make an informed guess as to the user's device. More testing info will be made available as soon as possible.
 
-Thanks to John West. His post was an excellent starting point for this project: http://blog.awareweb.com/post/2011/04/29/Sitecore-Rules-Engine-Managing-Top-Level-Navigation-Inclusion.aspx
+Thanks to John West. His post was an excellent starting point for this project: http://www.sitecore.net/Community/Technical-Blogs/John-West-Sitecore-Blog/Posts/2010/11/Using-the-Sitecore-Rules-Engine-in-a-Custom-Context-Setting-the-Context-Device.aspx
