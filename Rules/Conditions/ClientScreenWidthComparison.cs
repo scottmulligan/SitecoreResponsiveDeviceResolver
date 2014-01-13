@@ -16,7 +16,7 @@ namespace ResponsiveDeviceResolver.Rules.Conditions
         /// <summary>
         ///     The name of the cookie containing the resolution value
         /// </summary>
-        private readonly string _cookieName = Settings.GetSetting("cookieName");
+        private readonly string _cookieName = Settings.GetSetting("RDR_cookieName");
 
         protected override bool Execute(T ruleContext)
         {
