@@ -16,7 +16,7 @@ namespace ResponsiveDeviceResolver.Pipelines.HttpRequest
         {
             if (Context.Database == null
                 || Context.Item == null
-                || Sitecore.Context.PageMode.IsPageEditorEditing
+                || Context.PageMode.IsPageEditorEditing
                 || String.Compare(Context.Database.Name, "core", StringComparison.OrdinalIgnoreCase) == 0)
             {
                 return;

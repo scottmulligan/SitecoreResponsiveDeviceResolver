@@ -37,17 +37,14 @@ namespace ResponsiveDeviceResolver.Rules.Conditions
 
             // Split the cookie into resolution and pixel density ratio
             var httpCookie = HttpContext.Current.Request.Cookies[_cookieName];
-            if (httpCookie != null)
-            {
-                string[] cookieResolution = httpCookie.Value.Split(',');
-                // If we were able to get the cookie resolution
-                if (cookieResolution.Length > 0)
-                {
-                    int clientWidth;
-                    if (int.TryParse(cookieResolution[0], out clientWidth))
-                        return clientWidth;
-                }
-            }
+            if (httpCookie == null) return 0;
+            string[] cookieResolution = httpCookie.Value.Split(',');
+            
+            // If we were able to get the cookie resolution
+            if (cookieResolution.Length <= 0) return 0;
+            int clientWidth;
+            if (int.TryParse(cookieResolution[0], out clientWidth))
+                return clientWidth;
 
             return 0;
         }
