@@ -7,9 +7,9 @@ This module gives you the ability to take advantage of the built in Sitecore dev
 
 After installation, there is one line that needs to be added to your Main Layout file(s). The following line adds a sublayout file to your main layout that takes care of setting a cookie to keep track of screen resolution.
 
-<pre>
+```
 <sc:sublayout runat="server" path="/layouts/Responsive Device Resolver/Responsive Device Resolver.ascx" id="RDRsublayout" />
-</pre>
+```
 
 The next step is to navigate to the Responsive Device Resolver item located in the modules section of the content tree (/sitecore/system/Modules/Responsive Device Resolver). This item allows you to set global rules that will determine which devices are triggered for different detected screen resolutions. It is important to note that there is also an added rule that will make sure that a device is only triggered if the Context Item has Layout details applied. This allows you to set global Device rules that may only be used on a subset of items. Just add a layout and different presentation details to the items you want to trigger on different devices.
 
